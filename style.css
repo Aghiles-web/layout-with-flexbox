@@ -1,27 +1,85 @@
 * {
   box-sizing: border-box;
 }
-body {
- display: flex;
- align-items: center;
- justify-content: center;
-}
-.parent{
-  background-color: rgb(182, 203, 222);
-  width: 600px;
-  height: 300px;
+.page {
+  position: relative;
   display: flex;
-  flex-wrap: wrap;
-  align-content: space-between;
+  flex-direction: column;
+  color: black;
+  font-size: 18px;
+
 }
-div{
-  padding: 10px ;
-  background-color: tomato;
-  color: white;
+div {
+  padding: 10px;
+  color: black;
+  font-size: 18px;
   margin: 5px;
+}
+.header {
+  height: 10%;
+  width: 100%;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.logo {
+  background-color: rgb(215, 213, 218);
+  width: 12%;
+  height: 40px;
+ 
+}
+.links {
+  list-style: none;
+  display: flex;
+  height: 40px;
+  width: 84%;
+  justify-content: flex-end;
   align-items: center;
-  width: 150px;
-  height: 50px;
+  position: absolute;
+  background-color: rgb(215, 213, 218);
+  top: 12.3px;
+  right: 0;
+}
+li{
+ margin: 5px;
+ padding: 10px;
+}
+.main-area {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  position: relative;
+  height: 436px;
+  width: 100%;
+  right: 0;
+  left: 10px;
+  top: -30px;
+}
+.content {
+  position: absolute;
+  left: 0;
+  display: flex;
+  width: 65%;
+  height: 100%;
+  background-color: rgb(215, 213, 218);
+}
+.sidebar {
+  display: flex;
+  background-color: rgb(215, 213, 218);
+  position: absolute;
+  right: 0;
+  width: 32.8%;
+  height: 100%;
+}
+.footer {
+  background-color: rgb(215, 213, 218);
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  bottom: 0;
+  right: 9px;
+  left: 37.5px;
+  height: 40px;
 }
